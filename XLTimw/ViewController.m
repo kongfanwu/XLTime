@@ -9,9 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (nonatomic, strong) UILabel *dateLabel;
+
 /** <##> */
 @property (nonatomic, strong) NSDateFormatter *formatter;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
 @end
 
@@ -25,7 +26,7 @@
 }
 - (void)addTime
 {
-    self.dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 300, 300, 100)];
+//    self.dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 300, 300, 100)];
     _dateLabel.textAlignment = NSTextAlignmentLeft;
     _dateLabel.font = [UIFont systemFontOfSize:60];
     _dateLabel.textColor = [UIColor redColor];
